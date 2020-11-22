@@ -109,5 +109,5 @@ give an error – you’ll see why in a later lecture. You may need to use your 
 parentheses in order to avoid such an error  -}
 absolute :: Int -> Int
 absolute x = if x > 0
-                then
+                then x
                 else x * (-1)
