@@ -41,6 +41,17 @@ The common GHCi commands can be abbreviated as follows:
 multPi :: Float -> Float
 multPi x = pi * x
 
+-- FizzBuzz
+fizzBuzz :: Int -> String
+fizzBuzz n | fizz && buzz = "FizzBuzz"
+           | buzz         = "Buzz"
+           | fizz         = "Fizz"
+           | otherwise    = show n
+           where fizz = mod n 3 == 0
+                 buzz = mod n 5 == 0
+
+fizzBuzz100 = mapM_ (print . fizzBuzz) [1..100]
+
 {- 1. Write a function which multiplies its argument by 10 (e.g timesTen 5 gives
 50) -}
 timesTen :: Int -> Int
