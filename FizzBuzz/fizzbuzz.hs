@@ -1,4 +1,4 @@
--- FizzBuzz.hs
+-- fizzbuzz.hs
 
 fizzBuzz :: Int -> String
 fizzBuzz n | fizz && buzz = "FizzBuzz"
