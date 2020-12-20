@@ -7,8 +7,8 @@ absolute x
   | otherwise = x * (-1)
 
 -- 2. Write a function that returns 1 for positive arguments, -1 for negative arguments
--- and 0 for zero-valued arguments (note that negative numbers need to be within brackets
--- when typing into GHCi)
+-- and 0 for zero-valued arguments (note that negative numbers need to be within
+-- brackets when typing into GHCi)
 sign :: Int -> Int
 sign x
   | x == 0 = x
