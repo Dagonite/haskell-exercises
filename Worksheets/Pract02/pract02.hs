@@ -1,3 +1,5 @@
+-- pract02.hs
+
 -- 1. Write a new version of your function:
 -- absolute :: Int -> Int
 -- from worksheet 1, this time using guards rather than an if ... then ... else
