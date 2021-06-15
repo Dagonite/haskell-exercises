@@ -104,7 +104,7 @@ gradeStudents :: [StudentMark] -> [(String, Char)]
 gradeStudents g = [(fst i, grade i) | i <- g]
 
 {- 10) Using recursion, write a function which joins copies of a string together. For example:
-> duplicate "Hi" 3 = "HiHiHi"
+> duplicate "Hi" 3 -> "HiHiHi"
 -}
 duplicate :: String -> Int -> String
 duplicate x y
