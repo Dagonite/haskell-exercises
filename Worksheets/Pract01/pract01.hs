@@ -1,8 +1,8 @@
 -- pract01.hs
 
--- The first line is a declaration of the function's type. It states that the function mult2 takes an Int value and
--- returns another Int. The second line is the definition of the function. It states that for any argument value x, the
--- function returns the value 2 * x.
+{- The first line is a declaration of the function's type. It states that the function mult2 takes an Int value and
+returns another Int. The second line is the definition of the function. It states that for any argument value x, the
+function returns the value 2 * x. -}
 mult2 :: Int -> Int
 mult2 x = 2 * x
 
@@ -17,9 +17,8 @@ mult2 x = 2 * x
 mult4 :: Int -> Int
 mult4 x = mult2 (mult2 x)
 
-{-
-All GHCi commands begin with a colon and are not part of the Haskell language, they are used within the GHCi environment
-to change settings, to navigate around the filesystem and to edit, load, and reload Haskell files.
+{- All GHCi commands begin with a colon and are not part of the Haskell language, they are used within the GHCi
+environment to change settings, to navigate around the filesystem and to edit, load, and reload Haskell files.
 
 try:
 :type mult2 3
@@ -54,26 +53,26 @@ timesTen x = 10 * x
 sumThree :: Int -> Int -> Int -> Int
 sumThree x y z = x + y + z
 
--- 3. Using the constant pi and the power operator ^, write a function which gives the area of a circle given its
--- radius.
+{- 3. Using the constant pi and the power operator ^, write a function which gives the area of a circle given its
+radius. -}
 piApprox :: Float
 piApprox = 22 / 7 -- Can be used instead of pi
 
 areaOfCircle :: Float -> Float
 areaOfCircle x = pi * x ^ 2
 
--- 4. Using the definition of areaOfCircle, write a function that gives the volume of a cylinder given its length and
--- cross-sectional radius
+{- 4. Using the definition of areaOfCircle, write a function that gives the volume of a cylinder given its length and
+cross-sectional radius. -}
 volumeOfCylinder :: Float -> Float -> Float
 volumeOfCylinder x y = areaOfCircle x * y
 
--- 5. Write a function that takes four floats representing the coordinates x1, y1, x2, y2 of two points, and gives the
--- distance between the points.
+{- 5. Write a function that takes four floats representing the coordinates x1, y1, x2, y2 of two points, and gives the
+distance between the points. -}
 distance :: Float -> Float -> Float -> Float -> Float
 distance x1 y1 x2 y2 = sqrt ((y1 - y2) ^ 2 + (x1 - x2) ^ 2)
 
--- 6. Write a function which returns True if, and only if, all of its three arguments are all different from one
--- another.
+{- 6. Write a function which returns True if, and only if, all of its three arguments are all different from one
+another. -}
 threeDifferent :: Int -> Int -> Int -> Bool
 threeDifferent x y z = x /= y && x /= z && y /= z
 
@@ -85,24 +84,24 @@ divisibleBy x y = x `mod` y == 0
 isEven :: Int -> Bool
 isEven x = divisibleBy x 2
 
--- 9. Write a function:
+{- 9. Write a function:
 -- averageThree :: Int -> Int -> Int -> Float
 
--- which gives the average of three integer values. Note that Haskell will treat the inputs as Ints, and the output will
--- need to be a Float (since those are the types given in the type declaration), but it doesn’t automatically convert
--- from one type to the other. Use the fromIntegral function to do this.
+which gives the average of three integer values. Note that Haskell will treat the inputs as Ints, and the output will
+need to be a Float (since those are the types given in the type declaration), but it doesn’t automatically convert from
+one type to the other. Use the fromIntegral function to do this. -}
 averageThree :: Int -> Int -> Int -> Float
 averageThree x y z = fromIntegral (sumThree x y z) / 3
 
--- 10. Using a conditional expression (and not the built-in function abs), write a function that gives the absolute
--- value of an integer (i.e. gives a non-negative value):
--- absolute :: Int -> Int
+{- 10. Using a conditional expression (and not the built-in function abs), write a function that gives the absolute
+value of an integer (i.e. gives a non-negative value):
+absolute :: Int -> Int
 
--- Note that if you write:
--- > f -3
+Note that if you write:
+> f -3
 
--- where f is any function in Haskell, it will be interpreted as (f -) 3 and thus give an error – you'll see why in a
--- later lecture. You may need to use your own parentheses in order to avoid such an error.
+where f is any function in Haskell, it will be interpreted as (f -) 3 and thus give an error – you'll see why in a
+later lecture. You may need to use your own parentheses in order to avoid such an error. -}
 absolute :: Int -> Int
 absolute x =
   if x > 0
