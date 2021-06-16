@@ -1,6 +1,5 @@
-{-# OPTIONS_GHC -Wno-incomplete-patterns #-}
-
 -- pract03.hs
+{-# OPTIONS_GHC -Wno-incomplete-patterns #-}
 
 -- We don't import these from the Prelude so that we can define our own versions
 import Prelude hiding (gcd, (&&), (||))

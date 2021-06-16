@@ -1,4 +1,6 @@
-import Data.Char
+-- pract04.hs
+
+import Data.Char (isDigit, toUpper)
 
 type StudentMark = (String, Int)
 

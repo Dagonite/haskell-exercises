@@ -1,4 +1,6 @@
-import Data.Char
+-- pract06.hs
+
+import Data.Char (isDigit, isLower)
 
 {- Use the higher-order functions map, filter, and foldr from the Prelude to write the following functions. You should
 aim for your solutions to be as concise as possible. In particular:
