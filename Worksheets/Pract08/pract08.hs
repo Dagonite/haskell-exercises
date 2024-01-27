@@ -121,9 +121,3 @@ buildAddUpList arr = do
 addUpBuilder :: IO ()
 addUpBuilder = do
   buildAddUpList []
-
-{- 6) [harder] The Week9.hs file contains two pure functions for converting between Fahrenheit and Celsius temperatures.
-Using these functions, write a program that allows the user to enter any number of temperatures, and then displays the
-average of all the temperatures entered. After entering each value, the user should be prompted to enter either an “f”
-or a “c” to say whether the entered value was in Fahrenheit or Celsius. The user should type a special value (e.g. the
-empty string or “stop”) to finish. The average temperature should be outputted in both Fahrenheit and Celsius. -}
